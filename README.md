@@ -13,7 +13,7 @@ Real-time earthquake monitoring and ILS portfolio impact assessment pipeline.
 
 ## Key result
 Japan M6.8 Kumamoto (28 July 2026): p90 = $4.3bn consistent with
-Verisk estimate ($1.4-2.1bn) and Euler estimate ($3-4.5bn).
+Euler estimate ($3-4.5bn).
 Bond A ($2bn attachment): 21% breach probability.
 
 ## Data sources
