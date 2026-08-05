@@ -34,9 +34,3 @@ Covers industry loss triggers (~18.8% of cat bond market, Artemis 2025)
 ## Interactive Charts
 See full interactive visualizations at:
 **[jeremi-dubois.github.io/ILS-Earthquake-Monitor](https://jeremi-dubois.github.io/ILS-Earthquake-Monitor/)**
-
-| Chart | Description |
-|---|---|
-| [Fan Chart](https://jeremi-dubois.github.io/ILS-Earthquake-Monitor/#4-industry-insured-loss-distribution--fan-chart) | Loss distribution by magnitude |
-| [Portfolio Impact](https://jeremi-dubois.github.io/ILS-Earthquake-Monitor/#5-portfolio-impact--kumamoto-m68-28-july-2026) | Kumamoto M6.8 assessment |
-| [ILS Map](https://jeremi-dubois.github.io/ILS-Earthquake-Monitor/#6-ils-earthquake-monitor--real-time-map) | Real-time seismic monitor |
