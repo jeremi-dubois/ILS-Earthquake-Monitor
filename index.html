@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ILS Earthquake Monitor — Jérémi Dubois</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 40px auto; padding: 0 20px; background: #f8f9fa; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 40px; }
+        p { color: #555; font-size: 14px; }
+        iframe { border: 1px solid #ddd; border-radius: 4px; background: white; }
+        .context { background: #eaf0fb; border-left: 4px solid #2c3e50; padding: 10px 15px; margin-bottom: 10px; font-size: 13px; }
+        .meta { font-size: 12px; color: #888; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+<h1>ILS Earthquake Monitor</h1>
+<p class="meta">
+    Jérémi Dubois — CY Tech ING3 Applied Mathematics and Quantitative Finance<br>
+    Real-time earthquake monitoring and ILS portfolio impact assessment.<br>
+    Calibrated on EM-DAT 2000-2024 — 76 earthquakes — industry loss triggers (~18.8% of market).
+</p>
+
+<h2>1. Distribution of Earthquake Insured Losses</h2>
+<div class="context">Heavy-tailed distribution — mean is 12x the median. Justifies log-linear regression and EVT approach.</div>
+<iframe src="figures/figure_18.html" width="100%" height="480px"></iframe>
+
+<h2>2. Magnitude vs Log(Insured Loss)</h2>
+<div class="context">Positive log-linear relationship. Large scatter explained by insurance penetration — Japan 27.7% vs Indonesia 3.3%.</div>
+<iframe src="figures/figure_19.html" width="100%" height="480px"></iframe>
+
+<h2>3. Q-Q Plots — Normal vs GEV on Residuals</h2>
+<div class="context">GEV selected by AIC (196.6 vs 198.4). xi=0.458 confirms Fréchet domain — consistent with academic EVT project.</div>
+<iframe src="figures/figure_51.html" width="100%" height="480px"></iframe>
+
+<h2>4. Industry Insured Loss Distribution — Fan Chart</h2>
+<div class="context">Full uncertainty range for Japan earthquakes. Kumamoto M6.8 p90=$4.3bn consistent with market estimates (Verisk $1.4-2.1bn, Euler $3-4.5bn).</div>
+<iframe src="figures/figure_52.html" width="100%" height="600px"></iframe>
+
+<h2>5. Portfolio Impact — Kumamoto M6.8 (28 July 2026)</h2>
+<div class="context">Bond A ($2bn attachment): 21% breach probability. Zero impact at median — consistent with ILS managers reporting no material impact.</div>
+<iframe src="figures/figure_56.html" width="100%" height="480px"></iframe>
+
+<h2>6. ILS Earthquake Monitor — Real-time Map</h2>
+<div class="context">All M>=5 earthquakes in ILS zones — last 30 days (USGS API). Bubble size = magnitude. Hover for median loss estimate.</div>
+<iframe src="figures/figure_58.html" width="100%" height="600px"></iframe>
+
+</body>
+</html>
